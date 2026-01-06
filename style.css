@@ -37,7 +37,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
               url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1350&q=80');
   background-size: cover;
   background-position: center;
@@ -48,6 +48,7 @@ header h2 {
   font-size: 50px;
   color: white;
   margin-bottom: 15px;
+  font-weight: 700;
 }
 button {
   padding: 12px 30px;
@@ -75,8 +76,9 @@ button:hover{
 .service-box {
   flex: 1;
   padding: 30px;
-  background-color: #f9f9f9;
-  border-radius: 10px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05)
   transition: 0.3s;
 }
 .service-box:hover {
@@ -94,4 +96,19 @@ button:hover{
 }
 .footer p {
   margin: 5px 0;
+}
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  header h2 {
+    font-size: 30px;
+    padding: 0 20px;
+  }
+  .service-container{
+    flex-direction: column;
+  }
+  .service-box {
+    margin-bottom: 20px;
+  }
 }
