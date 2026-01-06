@@ -101,6 +101,9 @@ button:hover{
   .nav-links {
     display: none;
   }
+  header {
+    height: 50vh;
+  }
   header h2 {
     font-size: 30px;
     padding: 0 20px;
